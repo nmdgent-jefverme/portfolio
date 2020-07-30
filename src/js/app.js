@@ -1,4 +1,11 @@
 import '../sass/styles.scss';
+import Typewriter from 'typewriter-effect/dist/core';
+
+const typewriter = new Typewriter('#title',  {
+  delay: 75,
+})
+
+typewriter.typeString('Hello world, I\'m Jef Vermeire').start();
 
 /* const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('menu');
@@ -22,21 +29,4 @@ function myFunction() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
-}
-
-window.onload = function () {
-  document.getElementById("title").innerHTML = '';
-  typeWriter()
-};
-
-var i = 0;
-var txt = 'Hello world, I\'m Jef Vermeire';
-var speed = 100;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("title").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
 }

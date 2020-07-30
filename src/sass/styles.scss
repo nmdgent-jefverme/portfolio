@@ -9,6 +9,7 @@ body {
 .title {
   margin-top: 8px;
   font-family: monospace;
+  padding: 10px 0px;
 }
 
 .progress-container {
@@ -30,4 +31,19 @@ body {
 
 .intro--text {
   margin-top: 5 px;
+}
+
+.profilepicture {
+  border-radius: 50%;
+  // width: 50%;
+  transition: 0.5s;
+}
+
+.profilepicture:hover{
+  border-radius: 10%;
+  transition: 0.5s;
+}
+
+.gutter {
+  margin-top: 20px;
 }

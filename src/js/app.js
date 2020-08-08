@@ -5,10 +5,12 @@ const typewriter = new Typewriter('#title',  {
   delay: 75,
 })
 
-typewriter.typeString('Hello world, I\'m Jef Vermeire').start();
+typewriter.typeString('Hello world, I\'m Jef Vermeire').start().callFunction(() => {
+  document.getElementById('navbar').classList = 'navbar-menu';
+});
 
-/* const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('menu');
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('navbar');
 
 hamburger.addEventListener('click', () => {
   if(menu.className === 'navbar-menu') {
@@ -18,7 +20,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList = 'navbar-burger burger';
     menu.classList = 'navbar-menu';
   }
-}) */
+})
 
 window.onscroll = function () {
   myFunction()

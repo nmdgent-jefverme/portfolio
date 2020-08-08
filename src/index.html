@@ -14,11 +14,35 @@
   </div>
   <div class="has-background-primary">
     <div class="container">
-      <div class="columns">
-        <div class="column is-half">
-          <h1 class="title" id="title">Hello world, I'm Jef Vermeire</h1>
+      <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <div class="columns">
+              <div class="column">
+                <h1 class="title" id="title">Hello world, I'm Jef Vermeire</h1>
+              </div>
+            </div>
+          </a>
+
+          <a role="button" id="hamburger" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-      </div>
+
+        <div id="navbar" class="hidden">
+          <div class="navbar-end">
+            <a class="navbar-item">
+              Projects
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
   </div>
   <div class="container gutter">
@@ -28,9 +52,11 @@
         <p class="intro--text">I'm a 23 year old student that love's computers, basket and scouts!</p>
         <p class="intro--text">I started programming when I was 18 years old at Odisee University. I immediatly fell
           in love with webdevelopment and that is why you are here today.</p>
-          <p>My hobbies are playing basket (I'm 2 meters tall), going to the scouts and most things that are music related.</p>
+        <p>My hobbies are playing basket (I'm 2 meters tall), going to the scouts and most things that are music
+          related.</p>
       </div>
-      <div class="column is-6 is-offset-1 is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
+      <div
+        class="column is-6 is-offset-1 is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
         <img src="./images/profile.jpg" alt="Profilepicture" class="profilepicture">
       </div>
     </div>

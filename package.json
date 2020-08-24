@@ -15,6 +15,7 @@
     "autoprefixer": "^9.8.5",
     "babel-loader": "^8.1.0",
     "bulma": "^0.9.0",
+    "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^4.0.0",
     "cssnano": "^4.1.10",
     "html-webpack-plugin": "^4.3.0",
@@ -28,6 +29,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "handlebars": "^4.7.6",
+    "navigo": "^7.1.2",
     "typewriter-effect": "^2.13.1"
   }
 }

@@ -39,12 +39,16 @@ module.exports = (env, argv) => {
           ],
         },
         {
-          test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-          loader: 'url-loader',
-          query: {
-            limit: 10000,
-            name: 'images/[name].[hash:7].[ext]',
-          },
+          test: /\.(png|svg|jpg|gif|jpe?g)$/,
+          use: [
+            {
+              options: {
+                name: "[name].[ext]",
+                outputPath: "images/"
+              },
+              loader: "file-loader"
+            }
+          ]
         },
         {
           test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
@@ -72,7 +76,7 @@ module.exports = (env, argv) => {
       new MiniCssExtractPlugin({
         filename: dev ? '[name].css' : '[name].[hash].css',
         chunkFilename: dev ? '[id].css' : '[id].[hash].css',
-      }),
+      })
     ],
     devServer: {
       port: process.env.PORT || 8080,

@@ -6,7 +6,11 @@ body {
   font-family: $family-monospace;
 }
 
-.title {
+.columns {
+  margin-right: 0;
+}
+
+.title-header {
   color: white;
   margin-top: 8px;
   font-family: monospace;
@@ -26,6 +30,10 @@ body {
   width: 0%;
 }
 
+.biography {
+  height: 90vh;
+}
+
 .subtitle {
   text-decoration: underline;
 }
@@ -34,9 +42,15 @@ body {
   margin-top: 5 px;
 }
 
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .profilepicture {
   border-radius: 50%;
-  // width: 50%;
+  width: 70%;
   transition: 0.5s;
   margin: 0 auto;
 }
@@ -62,8 +76,32 @@ body {
   padding: 0 0.75rem;
 }
 
+.projects {
+  margin-top: 50px;
+}
+
+.icon-container {
+  text-align: center;
+}
+
+.icon {
+  width: 90%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
 @media screen and (max-width: 768px) {
   .title {
     font-size: 1.13rem;
+  }
+
+  .icon {
+    width: 10%;
   }
 }

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c14fce81d7.js" crossorigin="anonymous"></script>
   <title>Portflio Jef Vermeire</title>
 </head>
 
@@ -12,11 +13,14 @@
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
   </div>
+  <!--
+    Navbar
+  -->
   <div class="has-background-primary">
     <div class="container">
       <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="#">
+          <a class="navbar-item" href="#home">
             <div class="columns">
               <div class="column">
                 <h1 class="title-header title" id="title">Hello world, I'm Jef Vermeire</h1>
@@ -45,6 +49,9 @@
       </nav>
     </div>
   </div>
+  <!--
+    Intro and biograhpy
+  -->
   <div class="container gutter">
     <div class="columns biography">
       <div class="column is-half">
@@ -59,9 +66,11 @@
           related.
         </p>
         <div class="intro-links columns">
-          <div class="column is-half is-offset-one-quarter">
-            <a href="https://github.com/nmdgent-jefverme"><img class="intro-icon" src="./images/icons/github.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/jef-vermeire-980b46153/"><img class="intro-icon" src="./images/icons/linkedin.png" alt=""></a>
+          <div class="column intro-icons">
+            <a href="https://github.com/nmdgent-jefverme" target="_blank"><img class="intro-icon"
+                src="./images/icons/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/jef-vermeire-980b46153/" target="_blank"><img class="intro-icon"
+                src="./images/icons/linkedin.png" alt=""></a>
           </div>
         </div>
       </div>
@@ -69,6 +78,17 @@
         <img src="./images/profile.jpeg" alt="Profilepicture" class="profilepicture">
       </div>
     </div>
+    <div class="columns">
+      <div class="column is-full">
+        <div class="arrow bounce">
+          <p>Scroll down</p>
+          <a class="fa fa-arrow-down fa-2x has-text-dark" href="#"></a>
+        </div>
+      </div>
+    </div>
+    <!--
+      Skillset
+    -->
     <div class="skillset">
       <div class="columns">
         <div class="column">
@@ -102,6 +122,9 @@
         </div>
       </div>
     </div>
+    <!--
+      Projects
+    -->
     <div class="projects">
       <a name="projects">
         <h2 class="title is-1">Projects</h2>
@@ -129,7 +152,8 @@
               <p>Voor dit schoolproject moesten we zelf een server opstellen met
                 Express en MongoDB en dan een client maken die met de server
                 communiceert. Ik heb een verhuur systeem geschreven voor mijn
-                scoutsgroep waarbij je met behulp van een account een overzicht kan verkrijgen van ons materiaal en zo materiaal kan ontelenen. 
+                scoutsgroep waarbij je met behulp van een account een overzicht kan verkrijgen van ons materiaal en zo
+                materiaal kan ontelenen.
               </p>
             </div>
           </div>
@@ -183,6 +207,35 @@
           </div>
         </div>
       </div>
+    </div>
+    <!--
+      Contact
+    -->
+    <div class="field">
+      <p class="control has-icons-left has-icons-right">
+        <input class="input" type="email" placeholder="Email">
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-check"></i>
+        </span>
+      </p>
+    </div>
+    <div class="field">
+      <p class="control has-icons-left">
+        <input class="input" type="password" placeholder="Password">
+        <span class="icon is-small is-left">
+          <i class="fas fa-lock"></i>
+        </span>
+      </p>
+    </div>
+    <div class="field">
+      <p class="control">
+        <button class="button is-success">
+          Login
+        </button>
+      </p>
     </div>
   </div>
 </body>

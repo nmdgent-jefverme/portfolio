@@ -24,6 +24,10 @@ body {
 .intro-icon {
   width: 10%;
 }
+.intro-icons {
+  margin-top: 100px;
+  text-align: center;
+}
 
 .progress-container {
   top: 0px;
@@ -39,7 +43,7 @@ body {
 }
 
 .biography {
-  height: 95vh;
+  height: 70vh;
 }
 
 .subtitle {
@@ -48,6 +52,10 @@ body {
 
 .intro--text {
   margin-top: 5px;
+}
+
+.fa-arrow-down {
+  font-size: 5em;
 }
 
 .profile-container {
@@ -66,6 +74,28 @@ body {
 .profilepicture:hover{
   border-radius: 10%;
   transition: 0.5s;
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 .gutter {
@@ -141,5 +171,18 @@ body {
 
   .icon {
     width: 10%;
+  }
+
+  .intro-icons {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .biography {
+    height: 100vh;
   }
 }

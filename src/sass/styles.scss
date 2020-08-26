@@ -10,11 +10,19 @@ body {
   margin-right: 0;
 }
 
+.column {
+  padding-right: 0;
+}
+
 .title-header {
   color: white;
   margin-top: 8px;
   font-family: monospace;
   padding: 10px 0px;
+}
+
+.intro-icon {
+  width: 10%;
 }
 
 .progress-container {
@@ -31,7 +39,7 @@ body {
 }
 
 .biography {
-  height: 90vh;
+  height: 95vh;
 }
 
 .subtitle {
@@ -39,7 +47,7 @@ body {
 }
 
 .intro--text {
-  margin-top: 5 px;
+  margin-top: 5px;
 }
 
 .profile-container {
@@ -90,15 +98,45 @@ body {
   transition: 0.5s;
 }
 
-.icon:hover {
-  width: 100%;
+.project-content {
+  z-index: 1;
+  position: absolute;
+  display:none;
+  width: 50%;
   height: auto;
   transition: 0.5s;
+}
+
+.project-card {
+  padding: 10px;
+  margin: 5px;
+}
+
+.project-image {
+  position: relative;
+}
+  
+.project-card:hover .project-content {
+  display:block;
+  transition: 0.5s;
+}
+
+.project-card:hover .project-image {
+  visibility: hidden;
+}
+
+.project-card-assets {
+  font-style: italic;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
   .title {
     font-size: 1.13rem;
+  }
+
+  .project-content {
+    width: 100%;
   }
 
   .icon {

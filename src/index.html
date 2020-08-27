@@ -16,11 +16,11 @@
   <!--
     Navbar
   -->
-  <div class="has-background-primary">
+  <div class="has-background-black">
     <div class="container">
-      <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-black" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="#home">
+          <a class="navbar-item" name="home" href="#home">
             <div class="columns">
               <div class="column">
                 <h1 class="title-header title" id="title">Hello world, I'm Jef Vermeire</h1>
@@ -38,10 +38,10 @@
 
         <div id="navbar" class="hidden">
           <div class="navbar-end">
-            <a href="#projects" class="navbar-item">
+            <a href="#projects" class="navbar-item link">
               Projects
             </a>
-            <a class="navbar-item">
+            <a href="#contact" class="navbar-item link">
               Contact
             </a>
           </div>
@@ -65,14 +65,6 @@
           My hobbies are playing basket (I'm 2 meters tall), going to the scouts and most things that are music
           related.
         </p>
-        <div class="intro-links columns">
-          <div class="column intro-icons">
-            <a href="https://github.com/nmdgent-jefverme" target="_blank"><img class="intro-icon"
-                src="./images/icons/github.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/jef-vermeire-980b46153/" target="_blank"><img class="intro-icon"
-                src="./images/icons/linkedin.png" alt=""></a>
-          </div>
-        </div>
       </div>
       <div class="column is-half profile-container">
         <img src="./images/profile.jpeg" alt="Profilepicture" class="profilepicture">
@@ -122,122 +114,146 @@
         </div>
       </div>
     </div>
+  </div>
     <!--
       Projects
     -->
     <div class="projects">
-      <a name="projects">
-        <h2 class="title is-1">Projects</h2>
-      </a>
+      <div class="container">
+        <a name="projects">
+          <h2 class="title is-1">Projects</h2>
+        </a> 
+      </div>
       <div class="columns">
         <div class="column projects">
           <div class="columns">
-            <div class="column is-full has-background-primary">
-              <h2 class="title is-4">HDB Verhuur</h2>
-            </div>
-          </div>
-          <div class="columns is-mobile">
-            <div class="column is-half">
-              <div class="columns">
-                <div class="column">
-                  <img src="./images/projects/hdbverhuur.PNG" alt="">
-                </div>
-                <div class="column">
-                  <img src="./images/projects/hdbverhuur2.PNG" alt="">
-                </div>
+            <div class="column is-full has-background-black">
+              <div class="container">
+                <h2 class="title is-4 has-text-light">HDB Verhuur</h2>
               </div>
             </div>
-            <div class="column is-half">
-              <p class="project-card-assets">Node, Express, React, MongoDB, Sass</p>
-              <p>Voor dit schoolproject moesten we zelf een server opstellen met
-                Express en MongoDB en dan een client maken die met de server
-                communiceert. Ik heb een verhuur systeem geschreven voor mijn
-                scoutsgroep waarbij je met behulp van een account een overzicht kan verkrijgen van ons materiaal en zo
-                materiaal kan ontelenen.
-              </p>
-            </div>
           </div>
-          <div class="columns">
-            <div class="column is-full has-background-primary">
-              <h2 class="title is-4">Tagg, you're it</h2>
-            </div>
-          </div>
-          <div class="columns is-mobile">
-            <div class="column is-half">
-              <p class="project-card-assets">Node, Javascript, Sass, Firebase</p>
-              <p>Deze taak bestond uit het maken van een tikkertje applicatie waar
-                verschillende spelers aan kunnen deelnemen. De applicatie moest
-                met vanilla Javascript gemaakt worden en als backend maakten
-                we gebruik van firebase.
-              </p>
-            </div>
-            <div class="columns">
-              <div class="column">
-                <img src="./images/projects/tagg.png" alt="">
+          <div class="container">
+            <div class="columns is-mobile">
+              <div class="column is-half">
+                <div class="columns project-images">
+                  <div class="column">
+                    <img src="./images/projects/hdbverhuur.PNG" alt="">
+                  </div>
+                  <div class="column">
+                    <img src="./images/projects/hdbverhuur2.PNG" alt="">
+                  </div>
+                </div>
               </div>
-              <div class="column">
-                <img src="./images/projects/tagg2.png" alt="">
+              <div class="column is-half">
+                <p class="project-card-assets">Node, Express, React, MongoDB, Sass</p>
+                <p>Voor dit schoolproject moesten we zelf een server opstellen met
+                  Express en MongoDB en dan een client maken die met de server
+                  communiceert. Ik heb een verhuur systeem geschreven voor mijn
+                  scoutsgroep waarbij je met behulp van een account een overzicht kan verkrijgen van ons materiaal en zo
+                  materiaal kan ontelenen.
+                </p>
               </div>
             </div>
           </div>
           <div class="columns">
-            <div class="column is-full has-background-primary">
-              <h2 class="title is-4">Shop the dot</h2>
+            <div class="column is-full has-background-black">
+              <div class="container">
+                <h2 class="title is-4 has-text-light">Tagg, you're it</h2>
+              </div>
             </div>
           </div>
-          <div class="columns is-mobile">
-            <div class="columns">
-              <div class="column">
-                <img src="./images/projects/shopthedot.png" alt="">
+          <div class="container">
+            <div class="columns is-mobile">
+              <div class="column is-half">
+                <p class="project-card-assets">Node, Javascript, Sass, Firebase</p>
+                <p>Deze taak bestond uit het maken van een tikkertje applicatie waar
+                  verschillende spelers aan kunnen deelnemen. De applicatie moest
+                  met vanilla Javascript gemaakt worden en als backend maakten
+                  we gebruik van firebase.
+                </p>
               </div>
-              <div class="column">
-                <img src="./images/projects/shopthedot2.png" alt="">
+              <div class="columns project-images">
+                <div class="column">
+                  <img src="./images/projects/tagg.png" alt="">
+                </div>
+                <div class="column">
+                  <img src="./images/projects/tagg2.png" alt="">
+                </div>
               </div>
             </div>
-            <div class="column is-half">
-              <p class="project-card-assets">Node, React, Sass, Firebase</p>
-              <p>In het tweede jaar ben ik samen met twee andere studenten uit
-                mijn richting gekozen om mee te werken aan de internationale
-                project week Creative Skills 21. Voor deze opdracht moesten
-                we een duurzame levenstijl promoten bij jongeren tussen 15 en
-                25 jaar. Shop the dot is een browserextensie waarmee mensen
-                bewust online kunnen winkelen.
-              </p>
+          </div>
+          <div class="columns">
+            <div class="column is-full has-background-black">
+              <div class="container">
+                <h2 class="title is-4 has-text-light">Shop the dot</h2>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="columns is-mobile">
+              <div class="columns project-images">
+                <div class="column">
+                  <img src="./images/projects/shopthedot.png" alt="">
+                </div>
+                <div class="column">
+                  <img src="./images/projects/shopthedot2.png" alt="">
+                </div>
+              </div>
+              <div class="column is-half">
+                <p class="project-card-assets">Node, React, Sass, Firebase</p>
+                <p>In het tweede jaar ben ik samen met twee andere studenten uit
+                  mijn richting gekozen om mee te werken aan de internationale
+                  project week Creative Skills 21. Voor deze opdracht moesten
+                  we een duurzame levenstijl promoten bij jongeren tussen 15 en
+                  25 jaar. Shop the dot is een browserextensie waarmee mensen
+                  bewust online kunnen winkelen.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-full">
+          <a href="" name="contact">
+            <h2 class="title is-1">Contact</h2>
+          </a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-full">
+          <a href="https://github.com/nmdgent-jefverme" target="_blank" class="contact"><img class="contact-icon" src="./images/icons/github.png" alt=""><p class="contact-text link">Github</p></a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-full">
+          <a href="https://github.com/nmdgent-jefverme" target="_blank" class="contact"><img class="contact-icon" src="./images/icons/linkedin.png" alt=""><p class="contact-text link">Linked in</p></a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-full">
+          <a href="https://github.com/nmdgent-jefverme" target="_blank" class="contact"><img class="contact-icon" src="./images/icons/mail.png" alt=""><p class="contact-text link">Mail to jefvermeireown@gmail.com</p></a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-full">
+          <a href="https://github.com/nmdgent-jefverme" target="_blank" class="contact"><img class="contact-icon" src="./images/icons/facebook.webp" alt=""><p class="contact-text link">Facebook</p></a>
+        </div>
+      </div>
     <!--
-      Contact
+      Footer
     -->
-    <div class="field">
-      <p class="control has-icons-left has-icons-right">
-        <input class="input" type="email" placeholder="Email">
-        <span class="icon is-small is-left">
-          <i class="fas fa-envelope"></i>
-        </span>
-        <span class="icon is-small is-right">
-          <i class="fas fa-check"></i>
-        </span>
-      </p>
-    </div>
-    <div class="field">
-      <p class="control has-icons-left">
-        <input class="input" type="password" placeholder="Password">
-        <span class="icon is-small is-left">
-          <i class="fas fa-lock"></i>
-        </span>
-      </p>
-    </div>
-    <div class="field">
-      <p class="control">
-        <button class="button is-success">
-          Login
-        </button>
-      </p>
-    </div>
   </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Portfolio Jef Vermeire | <a href="#projects" class="link">Projects</a> | <a href="#contact" class="link">Contact</a> | <a href="#home" class="link">Back to top</a>
+        </p>
+      </div>
+    </footer>
 </body>
 
 </html>

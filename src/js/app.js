@@ -11,6 +11,10 @@ typewriter.typeString('Hello world, I\'m Jef Vermeire').start().callFunction(() 
 
 const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('navbar');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightbox = document.getElementById('lightbox');
+const projectImgs = document.getElementsByClassName('projectImg');
 
 hamburger.addEventListener('click', () => {
   if(menu.className === 'navbar-menu') {
@@ -20,6 +24,21 @@ hamburger.addEventListener('click', () => {
     hamburger.classList = 'navbar-burger burger';
     menu.classList = 'navbar-menu';
   }
+})
+
+lightboxClose.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+const openLightBox = (img) => {
+  lightbox.style.display = 'block';
+  lightboxImg.src = img;
+}
+
+Array.from(projectImgs).forEach((img) => {
+  img.addEventListener('click', (ev) => {
+    openLightBox(ev.target.src);
+  })
 })
 
 window.onscroll = function () {

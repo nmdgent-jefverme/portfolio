@@ -10,6 +10,10 @@
 </head>
 
 <body>
+  <div class="lightbox" id="lightbox">
+    <img src="./images/icons/close.png" alt="" class="lightbox-close" id="lightboxClose">
+    <img alt="" id="lightboxImg">
+  </div>
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
   </div>
@@ -57,8 +61,11 @@
       <div class="column is-half">
         <h2 class="title is-1">Who am I</h2>
         <p class="text">Mijn naam is Jef Vermeire. Ik ben 23 jaar en gepassioneerd door webdevelopment.</p>
-        <p class="text">In 2016 kwam ik voor het eerst in contact met webdevelopment en ben sindsdien gebeten door alles wat zich online afspeelt. Ik heb drie jaar ICT gestudeerd op odisee om dan over te schakelen naar de opleiding <strong>Grafische en Digitale Media</strong> aan <strong>Artevelde.</strong></p>
-        <p class="text">In mijn vrije tijd houd ik mij bezig met basket, scouts en alles wat met muziek te maken heeft.</p>
+        <p class="text">In 2016 kwam ik voor het eerst in contact met webdevelopment en ben sindsdien gebeten door alles
+          wat zich online afspeelt. Ik heb drie jaar ICT gestudeerd op odisee om dan over te schakelen naar de opleiding
+          <strong>Grafische en Digitale Media</strong> aan <strong>Artevelde.</strong></p>
+        <p class="text">In mijn vrije tijd houd ik mij bezig met basket, scouts en alles wat met muziek te maken heeft.
+        </p>
       </div>
       <div class="column is-half profile-container">
         <img src="./images/profile.jpeg" alt="Profilepicture" class="profilepicture">
@@ -110,166 +117,192 @@
     </div>
   </div>
   <hr>
-    <!--
+  <!--
       Projects
     -->
-    <div class="projects">
-      <div class="container">
-        <h2 id="projects" class="title is-1">Projects</h2>
-      </div>
-      <div class="columns">
-        <div class="column projects">
-          <div class="columns">
-            <div class="column is-full has-background-black">
-              <div class="container">
-                <h2 class="title is-4 has-text-light">HDB Verhuur</h2>
-              </div>
+  <div class="projects">
+    <div class="container">
+      <h2 id="projects" class="title is-1">Projects</h2>
+    </div>
+    <div class="columns">
+      <div class="column projects">
+        <div class="columns">
+          <div class="column is-full has-background-black">
+            <div class="container">
+              <h2 class="title is-4 has-text-light">HDB Verhuur</h2>
             </div>
           </div>
-          <div class="container">
-            <div class="columns is-mobile">
-              <div class="column is-half">
-                <div class="columns project-images">
-                  <div class="column">
-                    <img src="./images/projects/hdbverhuur.PNG" alt="">
-                  </div>
-                  <div class="column">
-                    <img src="./images/projects/hdbverhuur2.PNG" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="column is-half">
-                <p class="project-card-assets text">Node, Express, React, MongoDB, Sass</p>
-                <p class="text">Voor dit schoolproject moesten we zelf een server opstellen met
-                  Express en MongoDB en dan een client maken die met de server
-                  communiceert. Ik heb een verhuur systeem geschreven voor mijn
-                  scoutsgroep waarbij je met behulp van een account een overzicht kan verkrijgen van ons materiaal en zo
-                  materiaal kan ontelenen.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column is-full has-background-black">
-              <div class="container">
-                <h2 class="title is-4 has-text-light">Tagg, you're it</h2>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="columns is-mobile">
-              <div class="column is-half">
-                <p class="project-card-assets text">Node, Javascript, Sass, Firebase</p>
-                <p  class="text">Deze taak bestond uit het maken van een tikkertje applicatie waar
-                  verschillende spelers aan kunnen deelnemen. De applicatie moest
-                  met vanilla Javascript gemaakt worden en als backend maakten
-                  we gebruik van firebase.
-                </p>
-              </div>
+        </div>
+        <div class="container">
+          <div class="columns is-mobile">
+            <div class="column is-half">
               <div class="columns project-images">
                 <div class="column">
-                  <img src="./images/projects/tagg.png" alt="">
+                  <img src="./images/projects/hdbverhuur.PNG" alt="" class="projectImg">
                 </div>
                 <div class="column">
-                  <img src="./images/projects/tagg2.png" alt="">
+                  <img src="./images/projects/hdbverhuur2.PNG" alt="" class="projectImg">
                 </div>
               </div>
             </div>
+            <div class="column is-half">
+              <p class="project-card-assets text">Node, Express, React, MongoDB, Sass</p>
+              <p class="text">Voor dit schoolproject moesten we zelf een server opstellen met
+                Express en MongoDB en dan een client maken die met de server
+                communiceert. Ik heb een verhuur systeem geschreven voor mijn
+                scoutsgroep waarbij je met behulp van een account een overzicht kan verkrijgen van ons materiaal en zo
+                materiaal kan ontelenen.
+              </p>
+            </div>
           </div>
-          <div class="columns">
-            <div class="column is-full has-background-black">
-              <div class="container">
-                <h2 class="title is-4 has-text-light">Shop the dot</h2>
+        </div>
+        <div class="columns">
+          <div class="column is-full has-background-black">
+            <div class="container">
+              <h2 class="title is-4 has-text-light">Tagg, you're it</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="columns is-mobile">
+            <div class="column is-half">
+              <p class="project-card-assets text">Node, Javascript, Sass, Firebase</p>
+              <p class="text">Deze taak bestond uit het maken van een tikkertje applicatie waar
+                verschillende spelers aan kunnen deelnemen. De applicatie moest
+                met vanilla Javascript gemaakt worden en als backend maakten
+                we gebruik van firebase.
+              </p>
+            </div>
+            <div class="columns project-images">
+              <div class="column">
+                <img src="./images/projects/tagg.png" alt="" class="projectImg">
+              </div>
+              <div class="column">
+                <img src="./images/projects/tagg2.png" alt="" class="projectImg">
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="columns is-mobile">
-              <div class="columns project-images">
-                <div class="column">
-                  <img src="./images/projects/shopthedot.png" alt="">
-                </div>
-                <div class="column">
-                  <img src="./images/projects/shopthedot2.png" alt="">
-                </div>
-              </div>
-              <div class="column is-half">
-                <p class="project-card-assets text">Node, React, Sass, Firebase</p>
-                <p  class="text">In het tweede jaar ben ik samen met twee andere studenten uit
-                  mijn richting gekozen om mee te werken aan de internationale
-                  project week Creative Skills 21. Voor deze opdracht moesten
-                  we een duurzame levenstijl promoten bij jongeren tussen 15 en
-                  25 jaar. Shop the dot is een browserextensie waarmee mensen
-                  bewust online kunnen winkelen.
-                </p>
-              </div>
+        </div>
+        <div class="columns">
+          <div class="column is-full has-background-black">
+            <div class="container">
+              <h2 class="title is-4 has-text-light">Shop the dot</h2>
             </div>
           </div>
-          <div class="columns">
-            <div class="column is-full has-background-black">
-              <div class="container">
-                <h2 class="title is-4 has-text-light">Tagg, you're it</h2>
+        </div>
+        <div class="container">
+          <div class="columns is-mobile">
+            <div class="columns project-images">
+              <div class="column">
+                <img src="./images/projects/shopthedot.png" alt="" class="projectImg">
+              </div>
+              <div class="column">
+                <img src="./images/projects/shopthedot2.png" alt="" class="projectImg">
               </div>
             </div>
+            <div class="column is-half">
+              <p class="project-card-assets text">Node, React, Sass, Firebase</p>
+              <p class="text">In het tweede jaar ben ik samen met twee andere studenten uit
+                mijn richting gekozen om mee te werken aan de internationale
+                project week Creative Skills 21. Voor deze opdracht moesten
+                we een duurzame levenstijl promoten bij jongeren tussen 15 en
+                25 jaar. Shop the dot is een browserextensie waarmee mensen
+                bewust online kunnen winkelen.
+              </p>
+            </div>
           </div>
-          <div class="container">
-            <div class="columns is-mobile">
-              <div class="column is-half">
-                <p class="project-card-assets">Laravel, MYSQL</p>
-                <p>Voor deze schooltaak moesten we een project maken in het framework Laravel. De vereisten waren een admin gedeelte waar we pagina's konden aanmaken en beheren, blogposts konden maken en een overzicht konden oproepen van de donaties die gemaakt werden. Voor de donaties werkten we met Molly en met NGROK om een virtuele tunnel te maken. Als database maakten we gebruik van MySQL. 
-                </p>
+        </div>
+        <div class="columns">
+          <div class="column is-full has-background-black">
+            <div class="container">
+              <h2 class="title is-4 has-text-light">Totemapp: landingspagina</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="columns is-mobile">
+            <div class="column is-half">
+              <p class="project-card-assets">Laravel, MYSQL</p>
+              <p>Voor deze schooltaak moesten we een project maken in het framework Laravel. De vereisten waren een
+                admin gedeelte waar we pagina's konden aanmaken en beheren, blogposts konden maken en een overzicht
+                konden oproepen van de donaties die gemaakt werden. Voor de donaties werkten we met Molly en met NGROK
+                om een virtuele tunnel te maken. Verder moesten gebruikers de taal kunnen aanpassen alsook een mail
+                kunnen versturen en zich inschrijven voor de nieuwsbrief van de app. Als database maakten we gebruik van
+                MySQL.
+              </p>
+            </div>
+            <div class="columns project-images">
+              <div class="column">
+                <img src="./images/projects/totemapp.PNG" alt="" class="projectImg">
               </div>
-              <div class="columns project-images">
-                <div class="column">
-                  <img src="./images/projects/tagg.png" alt="">
-                </div>
-                <div class="column">
-                  <img src="./images/projects/tagg2.png" alt="">
-                </div>
+              <div class="column">
+                <img src="./images/projects/totemapp2.PNG" alt="" class="projectImg">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <hr>
-    <div class="container">
-      <div class="columns">
-        <div class="column is-full">
-          <h2 id="contact" class="title is-1">Contact</h2>
-        </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="columns">
+      <div class="column is-full">
+        <h2 id="contact" class="title is-1">Contact</h2>
       </div>
-      <div class="columns">
-        <div class="column is-full">
-          <a href="https://github.com/nmdgent-jefverme" target="_blank" class="contact"><img class="contact-icon" src="./images/icons/github.png" alt=""><p class="contact-text link">Github</p></a>
-        </div>
+    </div>
+    <div class="columns">
+      <div class="column is-full">
+        <a href="https://github.com/nmdgent-jefverme" target="_blank" class="contact"><img class="contact-icon"
+            src="./images/icons/github.png" alt="">
+          <p class="contact-text link">Github</p>
+        </a>
       </div>
-      <div class="columns">
-        <div class="column is-full">
-          <a href="https://www.linkedin.com/in/jef-vermeire-980b46153/" target="_blank" class="contact"><img class="contact-icon" src="./images/icons/linkedin.png" alt=""><p class="contact-text link">Linked in</p></a>
-        </div>
+    </div>
+    <div class="columns">
+      <div class="column is-full">
+        <a href="https://www.linkedin.com/in/jef-vermeire-980b46153/" target="_blank" class="contact"><img
+            class="contact-icon" src="./images/icons/linkedin.png" alt="">
+          <p class="contact-text link">Linked in</p>
+        </a>
       </div>
-      <div class="columns">
-        <div class="column is-full">
-          <a href="mailto:jefvermeireown@gmail.com" target="_blank" class="contact"><img class="contact-icon" src="./images/icons/mail.png" alt=""><p class="contact-text link">Mail to jefvermeireown@gmail.com</p></a>
-        </div>
+    </div>
+    <div class="columns">
+      <div class="column is-full">
+        <a href="mailto:jefvermeireown@gmail.com" target="_blank" class="contact"><img class="contact-icon"
+            src="./images/icons/mail.png" alt="">
+          <p class="contact-text link">Mail to jefvermeireown@gmail.com</p>
+        </a>
       </div>
-      <div class="columns">
-        <div class="column is-full">
-          <a href="https://www.facebook.com/jef.vermeire/" target="_blank" class="contact"><img class="contact-icon" src="./images/icons/facebook.webp" alt=""><p class="contact-text link">Facebook</p></a>
-        </div>
+    </div>
+    <div class="columns">
+      <div class="column is-full">
+        <a href="https://www.facebook.com/jef.vermeire/" target="_blank" class="contact"><img class="contact-icon"
+            src="./images/icons/facebook.webp" alt="">
+          <p class="contact-text link">Facebook</p>
+        </a>
       </div>
+    </div>
     <!--
       Footer
     -->
   </div>
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          Portfolio Jef Vermeire | <a href="#projects" class="link">Projects</a> | <a href="#contact" class="link">Contact</a> | <a href="#home" class="link">Back to top</a>
-        </p>
-      </div>
-    </footer>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Portfolio Jef Vermeire | <a href="#projects" class="link">Projects</a> | <a href="#contact"
+          class="link">Contact</a> | <a href="#home" class="link">Back to top</a>
+      </p>
+    </div>
+  </footer>
+  <script>
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightbox = document.getElementById('lightbox');
+    const openLightBox = (img) => {
+      lightbox.style.display = 'block';
+      lightboxImg.src = img;
+    }
+  </script>
 </body>
 
 </html>

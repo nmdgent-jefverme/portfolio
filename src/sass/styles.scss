@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 @import '../../node_modules/bulma/bulma.sass';
-$family-monospace: 'Recursive', monospace;
+$family-monospace: 'Recursive',
+monospace;
 
 html {
   scroll-behavior: smooth;
@@ -37,11 +38,12 @@ body {
   background-color: $primary;
   position: absolute;
   left: 0;
-  bottom: -3px; /* this is to match where the border is */
-  transform-origin: left; 
+  bottom: -3px;
+  /* this is to match where the border is */
+  transform-origin: left;
   transform: scale(0);
   transition: 0.25s linear;
-/*   will-change: transform; */
+  /*   will-change: transform; */
 }
 
 .link:hover:before {
@@ -50,6 +52,26 @@ body {
 
 .column {
   padding-right: 0;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  padding: 10px 62px 0px 62px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  text-align: center;
+}
+
+.lightbox-close {
+  position: fixed;
+  right: 5px;
+  top: 5px;
 }
 
 .title-header {
@@ -90,7 +112,8 @@ body {
   height: 55vh;
 }
 
-.intro-icon:hover, .contact-icon:hover {
+.intro-icon:hover,
+.contact-icon:hover {
   transform: rotate(360deg);
   transition: 0.5s;
 }
@@ -120,7 +143,7 @@ body {
   margin: 0 auto;
 }
 
-.profilepicture:hover{
+.profilepicture:hover {
   border-radius: 10%;
   transition: 0.5s;
 }
@@ -129,6 +152,7 @@ body {
   text-align: center;
   margin: 8% 0;
 }
+
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -136,12 +160,19 @@ body {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-30px);
   }
+
   60% {
     transform: translateY(-15px);
   }
@@ -180,7 +211,7 @@ body {
 .project-content {
   z-index: 1;
   position: absolute;
-  display:none;
+  display: none;
   width: 50%;
   height: auto;
   transition: 0.5s;
@@ -198,9 +229,9 @@ body {
 .project-images {
   margin: 5px 0px 10px 0px;
 }
-  
+
 .project-card:hover .project-content {
-  display:block;
+  display: block;
   transition: 0.5s;
 }
 

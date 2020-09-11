@@ -2,6 +2,10 @@
 @import '../../node_modules/bulma/bulma.sass';
 $family-monospace: 'Recursive', monospace;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $family-monospace;
 }
@@ -95,8 +99,8 @@ body {
   text-decoration: underline;
 }
 
-.intro--text {
-  margin-top: 5px;
+.text {
+  margin: 0 10px;
 }
 
 .fa-arrow-down {
@@ -148,7 +152,7 @@ body {
 }
 
 .title {
-  max-width: 80vw;
+  max-width: 100vw;
 }
 
 .hidden {
@@ -224,6 +228,7 @@ body {
 @media screen and (max-width: 768px) {
   .title {
     font-size: 1.13rem;
+    text-align: center;
   }
 
   .profilepicture {
